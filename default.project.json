@@ -1,0 +1,18 @@
+{
+  "name": "LandscapeX",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "LandscapeX":{
+        "$path": "src/LandscapeX"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "LandscapeXExample":{
+        "$path": "src/Example"
+      }
+    }
+  }
+}
