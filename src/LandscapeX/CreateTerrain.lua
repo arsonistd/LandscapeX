@@ -6,7 +6,6 @@
 local CreateTerrain = {}
 CreateTerrain.__index = CreateTerrain
 
-
 function CreateTerrain.new(settingsTable, biome)
     local self = setmetatable({}, CreateTerrain)
 
@@ -16,16 +15,9 @@ function CreateTerrain.new(settingsTable, biome)
     self.Offset = settingsTable["Offset"] or Vector3.new(0, 0, 0)
     self.Water = settingsTable["Water"] or true
 
-
     print(biome)
 
     return self
 end
-
-
-function CreateTerrain:Destroy()
-    
-end
-
 
 return CreateTerrain
