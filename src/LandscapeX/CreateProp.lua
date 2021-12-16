@@ -6,8 +6,18 @@
 local CreateProp = {}
 CreateProp.__index = CreateProp
 
-function CreateProp.new()
+function CreateProp.new(data)
     local self = setmetatable({}, CreateProp)
+    
+    if data == nil then
+       data = {} 
+    end
+    
+    if data["Model"] == nil then
+       error("[LANDSCAPEX] Data must include a prop ") 
+    end
+    
+    
     return self
 end
 
